@@ -1,0 +1,34 @@
+{
+  "name": "genpark-multi-source-research-spark-page-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous multi-source web research, fact checking & interactive summary page synthesizer.",
+  "author": "genpark",
+  "category": "research",
+  "tags": [
+    "multi-source-research",
+    "page-synthesizer",
+    "fact-checking",
+    "ai-search"
+  ],
+  "inputs": {
+    "research_topic": {
+      "type": "string"
+    },
+    "max_sources": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "synthesized_page_md": {
+      "type": "string"
+    },
+    "sources_indexed": {
+      "type": "integer"
+    },
+    "fact_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
