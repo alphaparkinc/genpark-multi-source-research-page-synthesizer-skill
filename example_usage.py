@@ -1,7 +1,7 @@
-from client import MultiSourceResearchSparkPageSynthesizerClient
+from client import MultiSourceResearchPageSynthesizerClient
 
 def main():
-    client = MultiSourceResearchSparkPageSynthesizerClient()
+    client = MultiSourceResearchPageSynthesizerClient()
     res = client.synthesize_research_page("Quantum Computing Commercial Readiness 2026", 10)
     print(f"Fact Score: {res['fact_score']}")
     print(f"Sources Indexed: {res['sources_indexed']}")
